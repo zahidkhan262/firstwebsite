@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top:0;
+    z-index: 999;
+    transition: .3s linear;
+}       
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}  
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 54px;
+    height: 65;
+    background-image: url(boy.jpg);
+    background-size: contain;
+}
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+}
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    border: white;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+.navbar-menu a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left:30px;
+    transition: .2s linear;
+}
+.navbar-menu a:hover{
+    color: violet !important;
+}
+.sticky{
+    background-color: #fff;
+    padding: 18px 0;
+}
+.sticky .logo{
+    background-image: url(boy3.jpg);
+}
+.sticky .navbar-menu a{
+    color: #111;
+}
+
+#home{
+    height: 100%;
+    min-height: 500px;
+    background: url( bg5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+
+}
+#home .content{
+    width: 100%;
+    color: white;
+}
+#home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+#home .content h1::after{
+    counter:"Zahid khan" ;
+    animation: textanim 10s linear infinite;
+}
+@keyframes textanim{
+    25%{
+        content: "A Developer";
+    }
+    50%{
+        content: "A Youtuber";
+    }
+}
+.socialmedia a{
+    color: #ffffff;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+.socialmedia a:hover{
+    color: #48dbfb;
+}
+#home .button{
+    margin-top: 60px;
+}
+#home .button a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #fff;
+    font-size:15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #48dbfb;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+
+}
+#home .button a:hover,
+#home .button a:nth-child(2){
+    background-color: #48dbfb;
+    columns: #fff;
+}
+
+
